@@ -24,9 +24,9 @@ namespace Calculator
     {
         private string[] NumberKeyPad = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
         private string[] operators = { "+", "−", "✕", "÷" };
-        private string operand1 = "";
+        private string? operand1 = "0";
         private string? math = "";
-        private string operand2 = "";
+        private string? operand2 = "0";
 
         public MainWindow()
         {
@@ -56,7 +56,7 @@ namespace Calculator
             }
             else if (button == btnDot)
             {
-                if (!Result.Text.Contains("."))
+                if (!Result.Text.Contains('.'))
                 {
                     Result.Text += ".";
                 }
@@ -100,20 +100,15 @@ namespace Calculator
             }
             else if (button == btnCal)
             {
-                if (math != "")
-                {
-                    Result.Text = Calculate(operand1, operand2, math);
-                    math = "";
-                }
+                
             }
         }
 
-        private string Calculate(string operand1, string operand2, string? math)
+        private string? Calculate(string? operand1, string? operand2, string? math)
         {
-            operand2 = Result.Text;
             double a = Convert.ToDouble(operand1);
             double b = Convert.ToDouble(operand2);
-            string result = "";
+            string? result = operand1;
             switch (math)
             {
                 case "+": result = Convert.ToString(a + b); break;
