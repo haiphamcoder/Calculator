@@ -17,9 +17,17 @@
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="45"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Column="0" Name="ModeName" Text="Standard" FontSize="25" FontWeight="Bold" Margin="6,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                <Button Grid.Column="0" Content="☰" FontSize="20" FontWeight="Bold" Width="32" Height="32" VerticalAlignment="Center" HorizontalAlignment="Center" Background="White">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <TextBlock Grid.Column="1" Name="ModeName" Text="Standard" FontSize="25" FontWeight="Bold" Margin="6,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
             </Grid>
             <Grid Grid.Row="1">
                 <Border BorderThickness="2" BorderBrush="Black" Margin="6,0,6,0" CornerRadius="5">
