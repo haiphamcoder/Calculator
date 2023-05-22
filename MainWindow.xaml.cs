@@ -44,14 +44,30 @@ namespace Calculator
             else if (button == btnC)
             {
                 Result.Text = "0";
-            } else if(button == btnBackspace)
+            }
+            else if (button == btnBackspace)
             {
-                if(Result.Text.Length>1)
+                if (Result.Text.Length > 1)
                 {
-                    Result.Text= Result.Text.Remove(Result.Text.Length-1);
-                } else
+                    Result.Text = Result.Text.Substring(0, Result.Text.Length - 1);
+                }
+                else
                 {
                     Result.Text = "0";
+                }
+            }
+            else if (button == btnPlusMinus)
+            {
+                if (Result.Text != "0")
+                {
+                    if (Result.Text[0] == '-' && Result.Text.Length > 1)
+                    {
+                        Result.Text = Result.Text.Substring(1);
+                    }
+                    else
+                    {
+                        Result.Text = "-" + Result.Text;
+                    }
                 }
             }
         }
