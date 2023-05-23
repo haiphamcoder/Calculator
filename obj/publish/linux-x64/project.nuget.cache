@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "fUgN9r/xurerQKFVH2Mb/sppFV+VAfZ9kbH9iq5EI8ZwWXzIBZDI/GOnk5D+qCEuyfG9pHxv9Y8ZLC78g6JqpA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Haiqqez\\Workspace\\Calculator\\Calculator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Haiqqez\\.nuget\\packages\\microsoft.netcore.app.host.linux-x64\\6.0.16\\microsoft.netcore.app.host.linux-x64.6.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,5 @@
+C:\Users\Haiqqez\Workspace\Calculator\bin\Release\net6.0-windows\publish\linux-x64\Calculator
+C:\Users\Haiqqez\Workspace\Calculator\bin\Release\net6.0-windows\publish\linux-x64\Calculator.dll
+C:\Users\Haiqqez\Workspace\Calculator\bin\Release\net6.0-windows\publish\linux-x64\Calculator.deps.json
+C:\Users\Haiqqez\Workspace\Calculator\bin\Release\net6.0-windows\publish\linux-x64\Calculator.runtimeconfig.json
+C:\Users\Haiqqez\Workspace\Calculator\bin\Release\net6.0-windows\publish\linux-x64\Calculator.pdb
